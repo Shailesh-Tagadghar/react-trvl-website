@@ -1,29 +1,31 @@
-import React from 'react'
-import './Button.css'
-import { Link } from 'react-router-dom'
+// import React from 'react';
+// import './Button.css';
+// import { Link } from 'react-router-dom';
+
+// export function Button() {
+//   return (
+//     <Link to='sign-up'>
+//       <button className='btn'>Sign Up</button>
+//     </Link>
+//   );
+// }
+
+import React from 'react';
+import './Button.css';
+import { Link } from 'react-router-dom';
 
 const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
 
 const SIZES = ['btn--medium', 'btn--large'];
 
-// function Button() {
-//   return (
-//     <div>
-      
-//     </div>
-//   )
-// }
-
-// export default Button
-
 export const Button = ({
-    children,
-    type,
-    onClick,
-    buttonStyle,
-    buttonSize
+  children,
+  type,
+  onClick,
+  buttonStyle,
+  buttonSize
 }) => {
-    const checkButtonStyle = STYLES.includes(buttonStyle)
+  const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
     : STYLES[0];
 
@@ -40,4 +42,4 @@ export const Button = ({
       </button>
     </Link>
   );
-}
+};
