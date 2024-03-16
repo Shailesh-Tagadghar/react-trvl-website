@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../App.css'
+import './Home.css'
 import Footer from '../Footer';
 
 export default function Products() {
